@@ -9,6 +9,7 @@ CREATE TABLE info_personal (
     educationfield VARCHAR(50),
     PRIMARY KEY (employeenumber)
     );
+SELECT * FROM info_personal
 
 CREATE TABLE satisfaccion (
 	employeenumber INT NOT NULL,
@@ -25,6 +26,8 @@ CREATE TABLE satisfaccion (
         ON DELETE CASCADE 
         ON UPDATE CASCADE );
         
+SELECT * FROM satisfaccion
+        
         
 CREATE TABLE info_salario (
 	employeenumber INT NOT NULL,
@@ -39,10 +42,12 @@ CREATE TABLE info_salario (
         ON DELETE CASCADE 
         ON UPDATE CASCADE );
         
+SELECT * FROM info_salario
+        
 CREATE TABLE info_trabajo (
 	employeenumber INT NOT NULL,
     attrition CHAR(10) NULL DEFAULT NULL, 
-    businesstravel CHAR(10) NULL DEFAULT NULL, 
+    businesstravel VARCHAR(50) NULL DEFAULT NULL, 
     jobrole VARCHAR(50) NULL DEFAULT NULL, 
     department VARCHAR(50) NULL DEFAULT NULL, 
     joblevel INT NULL DEFAULT NULL,
@@ -61,3 +66,5 @@ CREATE TABLE info_trabajo (
         REFERENCES info_personal(employeenumber)
         ON DELETE CASCADE 
         ON UPDATE CASCADE );
+        
+SELECT * FROM info_trabajo
