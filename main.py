@@ -19,7 +19,4 @@ from src import soporte_bbdd as sbd
 from src import soporte_queries as query 
 
 
-# %%
 
-sbd.creacion_bbdd(query.query_creacion_bbdd, "AlumnaAdalab", "base_prueba")
-# %%
