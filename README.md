@@ -1,5 +1,5 @@
 
-## ConsultoriaDatosCorporativos
+## Consultoria Datos Corporativos
 El propósito de este proyecto es la lectura, limpieza, análisis de los datos y la experimentación A/B de gran alcance de la empresa ABC Corporation para potenciar a los empleados. Con el objetivo de reducir la rotación de empleados y mejorar la satisfacción en el trabajo la empresa.
 
 Nuestra misión es identificar factores clave que influyen en la satisfacción en el trabajo y, en última instancia, en la retención de empleados.
