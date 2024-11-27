@@ -64,4 +64,4 @@ Presentación en PowerPoint sobre el proyecto "Transformando el Talento: Anális
 - Utiliza visualizaciones de datos claras para explicar los conceptos de análisis de datos.
 - Enfócate en los beneficios prácticos del proyecto para la empresa.
   
-¡Espero que esta estructura te sea útil para desarrollar tu presentación!
+
