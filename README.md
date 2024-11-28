@@ -85,7 +85,7 @@ Fase 6: Informe de los resultados
 
     7. Carpeta_6_reporte_resultados
 
-    - Powerpoint.pdf
+    - Powerpoint.pptx
 
 - Documentacion.ipynb
 - proyecto-3.md
