@@ -1,110 +1,110 @@
+# 🏢 Final Project Module 3 – Employee Satisfaction and Retention Analysis
 
-## Consultoria Datos Corporativos
-El propósito de este proyecto es la lectura, limpieza, análisis de los datos y la experimentación A/B de gran alcance de la empresa ABC Corporation para potenciar a los empleados. Con el objetivo de reducir la rotación de empleados y mejorar la satisfacción en el trabajo la empresa.
+**Final project for Module 3 of the Adalab Data Analytics Bootcamp**  
+*Technologies used: Python · Pandas · MySQL · Seaborn · Matplotlib · ETL · A/B Testing*
 
-Nuestra misión es identificar factores clave que influyen en la satisfacción en el trabajo y, en última instancia, en la retención de empleados.
+This project was developed by **Ana Hernández**, **Ariana Papantonio**, **Mirella Vissetti**, and **Irene Alonso**.  
+It focuses on reducing employee turnover and improving job satisfaction within a fictional company, ABC Corporation.
 
-En resumen, en este proyecto, presentaremos los resultados de nuestro análisis exploratorio de datos, diseñaremos un experimento A/B para probar hipótesis críticas y analizaremos los resultados para proporcionar a ABC Corporation información valiosa que informe sus decisiones estratégicas.
+---
 
-# Mi Proyecto
+## 🎯 Project Goal
 
-## Índice
+The aim of this project is to analyze internal employee data to identify key factors that influence job satisfaction and retention.  
+We applied data cleaning, exploratory analysis, relational database design, and A/B testing to generate actionable insights.  
+The outcome helps support strategic decisions for boosting engagement and reducing churn.
 
-1. [Descripción](#Descripción)
-2. [Archivos](#Archivos)
-3. [Metodología](#Metodología)
-4. [Autor](#Autor)
+---
 
-## Descripción
-El objetivo es reducir la rotación de empleados y mejorar la satisfacción en el trabajo la empresa. Esto se ha podido hacer con las distintas fases:
+## 🧠 Project Phases
 
-Fase 1: Análisis Exploratorio de Datos(EDA)
+The work was structured into six main phases:
 
-Fase 2: Transformación de los datos
+1. **Exploratory Data Analysis (EDA)**  
+   Initial examination of numerical and categorical variables.
 
-Fase 3: Diseño de BBDD e Insercción de los Datos
+2. **Data Transformation**  
+   Cleaning and restructuring the datasets.
 
-Fase 4: Problema de Pruebas A/B
+3. **Database Design & Insertion**  
+   Structuring data into relational models and loading into **MySQL**.
 
-Fase 5: Creación de un ETL
+4. **A/B Testing Design**  
+   Formulating and running controlled experiments to test critical hypotheses.
 
-Fase 6: Informe de los resultados
+5. **ETL Pipeline Development**  
+   Automating data movement from source files into the SQL database using custom Python scripts.
 
-## Archivos
+6. **Results Reporting**  
+   Presenting conclusions and strategic recommendations based on the analysis.
 
-    1. Carpeta Data:
+---
 
-    - categoricos_limpio.csv
-    - categoricos.csv
-    - data_limpia_1.csv
-    - hr_raw_data_final.csv
-    - info_personal.csv
-    - info_salario_1.csv
-    - info_saisfaction_1.csv
-    - info_trabajo.csv
-    - numericos_limpio_1.csv
-    - numericos:csv
-    - unidos_limpio_1.csv
+## 📁 Project Structure
 
-    2. Carpeta Fase_1_EDA
+```
+├── Data/
+│   ├── hr_raw_data_final.csv
+│   ├── info_personal.csv
+│   ├── info_salario_1.csv
+│   ├── info_satisfaccion_1.csv
+│   ├── info_trabajo.csv
+│   ├── categoricos.csv
+│   ├── numericos.csv
+│   ├── unidos_limpio_1.csv
+│   └── cleaned datasets (various)
+│
+├── Fase_1_EDA/
+│   ├── EDA_categorico.ipynb
+│   ├── EDA_numerico.ipynb
+│   └── EDA_general.ipynb
+│
+├── Fase_2_transformacion/
+│   ├── 1_division_dataframes.ipynb
+│   ├── 2_limpieza_categoricos.ipynb
+│   ├── 3_limpieza_numericos.ipynb
+│   └── 5_data_junta.ipynb
+│
+├── Fase_3_diseño_bbdd_insercion/
+│   ├── 1_creacion_tablas.ipynb
+│   ├── 2_BBDD.sql
+│   ├── 3_insercion_datos.ipynb
+│   └── Exportacion-importacion/
+│       ├── estudio_satisfaccion_info_personal.sql
+│       ├── estudio_satisfaccion_info_salario.sql
+│       └── estudio_satisfaccion_info_trabajo.sql
+│
+├── Fase_4_AB_testing/
+│   └── AB_testing.ipynb
+│
+├── Fase_5_ETL/
+│   ├── main.py
+│   └── src/
+│       ├── __init__.py
+│       ├── soporte_bbdd.py
+│       ├── soporte_funciones.py
+│       └── soporte_queries.py
+│
+├── Fase_6_reporte_resultados/
+│   └── Powerpoint.pptx
+│
+├── Documentacion.ipynb
+├── proyecto-3.md
+└── README.md
+```
 
-    - EDA_categorico.ipynb
-    - EDA_general.ipynb
-    - EDA_numerico.ipynb
+---
 
-    3. Carpeta Fase_2_transformacion:
+## 📊 Tools & Technologies
 
-    - 1_division_dataframes.ipynb
-    - 2_limpieza_categoicos.ipynb
-    - 3_limpieza_numericos.ipynb
-    - 4_columnas_eliminadas.ipynb
-    - 5_data_junta.ipynb
+- **Python**: data cleaning, analysis, and scripting  
+- **MySQL**: relational database storage and queries  
+- **Pandas**, **NumPy**, **SciPy**: data manipulation and statistical testing  
+- **Matplotlib**, **Seaborn**: visualizations  
+- **Jupyter Notebook**: development and presentation  
+- **A/B Testing**: statistical experiment design  
+- **ETL Pipeline**: automated data loading via Python scripts
 
-    4. Carpeta Fase_3_diseño_bbdd_insercion
-    - Carpeta: Exportacion-importacion
-        - estudio_satisfaccion_info_personal.sql
-        - estudio_satisfaccion_info_salario.sql
-        - estudio_satisfaccion_info_trabajo.sql
-        - estudio_satisfaccion_satisfaccion.sql
-    - 1_creacion_tablas.ipynb
-    - 2_BBDD.sql
-    - 3_insercion-datos.ipynb
+---
 
-    5. Carpeta Fase_4_AB_testing
-
-    - AB_testing.ipynb
-
-    6. Carpeta Fase_5_ETL
-
-    - Carpeta src
-        - __init__.py
-        - soporte_bbdd.py
-        - soporte_funciones.py
-        - soporte_queries.py
-    - main.py
-
-    7. Carpeta_6_reporte_resultados
-
-    - Powerpoint.pptx
-
-- Documentacion.ipynb
-- proyecto-3.md
-- README.md
-
-
-## Metodología
-Pasos de limpieza de datos: Fase 1 y 2
-
-Técnicas de visualización utilizadas: Gráficos
-
-Herramientas y bibliotecas empleadas: jupyter notebook, pandas, numpy, scipy.stats, warnings, matplotlib, seaborn en Python, mysql.
-
-## Autor
-
-El Análisis de Datos fue realizado por Ana Hernandez, Ariana Papantonio, Mirella Vissetti y Irene Alonso. Somos un equipo de analistas de datos especializados en la exploración y análisis de datos para obtener información útil y acciones significativas.
-
-
-
-
-
-
+# ✅ Thanks for exploring our project!
